@@ -1,35 +1,40 @@
 // BUY PAGE
 
 .section.buy-form
-    padding: 250px 0 50px
+    padding: 150px 0 50px
     .section-header
-        float: left
-        text-align: left
-        width: 48%
-        font-size: 2.5rem
+        float: right
+        text-align: center
+        width: 100%
+        font-size: 3rem
         line-height: 1.5
-        padding-bottom: 0
+        padding-bottom: 20px
     .section-text
-        clear: left
-        float: left
+        clear: right
+        float: right
         padding-left: 0
         padding-top: 20px
         width: 48%
         vertical-align: top
     .mailing-signup-form
-        float: right
+        float: left
         clear: none
         width: 48%
         vertical-align: top
+        #mc_embed_signup form
+            padding-left: 0
+            padding-right: 0
+            .mc-field-group
+                width: 100%
         label
             font-weight: 700
             text-transform: uppercase
             font-size: 1.2rem
             padding-bottom: 5px
             span.asterisk
-                float: left
+                display: inline-block
                 font-size: 1.6rem !important
-                margin-left: -10px
+                margin-left: 10px
                 position: relative !important
                 top: 0 !important
         input[type="text"], input[type="email"]
@@ -44,5 +49,5 @@
 @media screen and (max-width: $medium)
     .section.buy-form
         .section-header, .section-text, .mailing-signup-form
-            padding-bottom: 50px
+            padding-bottom: 35px
             width: 100%
