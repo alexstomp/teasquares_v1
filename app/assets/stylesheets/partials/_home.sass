@@ -173,16 +173,20 @@
             padding-left: 0
             width: 100%
     .section.home-flavors
+        overflow: hidden
         .flavors-wrap
             .flavor
+                clear: both
                 clear: left
-                overflow: hidden
-                height: 53.652vw
+                min-height: 53.652vw
                 margin-bottom: 40px
+                position: relative
                 width: 100%
                 img
+                    +transform(translateY(-50%))
                     position: absolute
                     right: -45%
+                    top: 50%
                     width: 100%
                 .flavor-header, .flavor-description
                     clear: left
