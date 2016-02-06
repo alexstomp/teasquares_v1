@@ -1,0 +1,20 @@
+// BUTTON
+
+.button, input[type="button"], input[type="submit"]
+    +transition(all, 0.1s)
+    +roundedCorners(3px)
+    background-color: $accent
+    border: 1px solid darken($accent, 4%)
+    color: #F6F8F1
+    display: inline-block
+    font-size: 14px
+    font-weight: bold
+    height: 50px
+    line-height: 18px
+    padding: 15px 25px
+    text-transform: uppercase
+    width: auto
+    &:hover
+        background-color: darken($accent, 10%)
+        border-color: darken($accent, 14%)
+        color: white

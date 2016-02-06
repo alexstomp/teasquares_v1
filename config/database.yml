@@ -1,0 +1,13 @@
+development:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: teasquares_dev
+  pool:     5
+
+production:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: teasquares
+  pool:     5

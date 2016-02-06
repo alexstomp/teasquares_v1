@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tea Squares</title>
+
+        <!-- Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="<%= image_path('favicon.png')%>" rel="icon" type="img/png"/>
+
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body class="js-body">
+        <div class="header js-header">
+            <div class="center">
+                <a class="logo" href="<%= root_path() %>">
+                    <img src="<%= asset_path('logo.png') %>"/>
+                </a>
+                <nav id="topnav">
+                    <a href="#" class="button">Reserve Your Tea Squares</a>
+                </nav>
+            </div>
+        </div>
+
+        <%= yield %>
+    </body>
+</html>
