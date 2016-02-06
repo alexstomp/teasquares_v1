@@ -5,32 +5,60 @@
     </div>
 </div>
 
-<div class="section">
+<div class="section home-intro">
     <div class="center">
         <h2 class="section-header">
             <span class="section-header-text">What are Tea Squares?</span>
-            <span class="section-header-underline"></span>
+            <!-- <span class="section-header-underline"></span> -->
         </h2>
         <p class="section-text">
-            TeaSquares are bite-sized snacks infused with the natural energy of tea leaves. Each Tea Square is handmade
+            Tea Squares are bite-sized snacks infused with the natural energy of tea leaves. Each Tea Square is handmade
             using raw and organic ingredients that are healthy and delicious. We slow brew each  Tea Square in small
             batches for 8-hours to release the richly decadent flavors like our Madagascan vanilla bean Tea Square.
         </p>
     </div>
 </div>
 
-<div class="section-divider"></div>
-
-<div class="section">
+<div class="section home-flavors">
     <div class="center">
         <h2 class="section-header">
-            <span class="section-header-text">What are Tea Squares?</span>
+            <span class="section-header-text">A Healthier Snack Experience</span>
             <span class="section-header-underline"></span>
         </h2>
-        <p class="section-text">
-            TeaSquares are bite-sized snacks infused with the natural energy of tea leaves. Each Tea Square is handmade
-            using raw and organic ingredients that are healthy and delicious. We slow brew each  Tea Square in small
-            batches for 8-hours to release the richly decadent flavors like our Madagascan vanilla bean Tea Square.
-        </p>
+        <p class="section-pre-text">Simple, healthy ingredients keep you going throughout the entire day.</p>
+        <div class="flavors-wrap">
+            <div class="flavor">
+                <img src="<%= asset_path('tea.png') %>"/>
+                <h2 class="flavor-header">Madagascan Vanilla Bean</h2>
+                <p class="flavor-description">Black Tea, Madagascan Vanilla Bean, Cocao Nibs</p>
+            </div>
+            <div class="flavor middle">
+                <img src="<%= asset_path('acai.png') %>"/>
+                <h2 class="flavor-header">Acai BlueBerry</h2>
+                <p class="flavor-description">Acai Powder and Blueberries</p>
+            </div>
+            <div class="flavor last">
+                <img src="<%= asset_path('matcha.png') %>"/>
+                <h2 class="flavor-header">Matcha Green Tea</h2>
+                <p class="flavor-description">Green Tea Matcha Powder and Pistachios</p>
+            </div>
+            <p class="section-closing-text">
+                <strong>Tea Square Common Ingredients</strong>: Crispy Millet, Raw Pumpkin Seeds, Almonds, Brown Rice Syrup, Honey,
+                Coconut Oil, Pink Himalayan Salt
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="section-divider"></div>
+
+<div class="section home-buy-now">
+    <div class="center">
+        <h2 class="section-header">
+            <span class="section-header-text">Join the Tea Revolution!</span>
+            <span class="section-header-underline"></span>
+        </h2>
+        <p class="section-pre-text">Order Your Tea Squares Today.</p>
+        <a href="<%= buy_path() %>" class="button">Buy Now</a>
     </div>
 </div>

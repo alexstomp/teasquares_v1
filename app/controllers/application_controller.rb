@@ -5,4 +5,7 @@ class ApplicationController < ActionController::Base
 
     def home
     end
+
+    def buy
+    end
 end

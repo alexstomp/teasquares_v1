@@ -1,0 +1,40 @@
+// BUY PAGE
+
+.section.buy-form
+    padding: 250px 0 50px
+    .section-header
+        float: left
+        text-align: left
+        width: 48%
+        font-size: 2.5rem
+        line-height: 1.5
+        padding-bottom: 0
+    .section-text
+        clear: left
+        float: left
+        padding-left: 0
+        padding-top: 20px
+        width: 48%
+        vertical-align: top
+    .mailing-signup-form
+        float: right
+        clear: none
+        width: 48%
+        vertical-align: top
+        label
+            font-weight: 700
+            text-transform: uppercase
+            font-size: 1.2rem
+            padding-bottom: 5px
+            span.asterisk
+                float: left
+                font-size: 1.6rem !important
+                margin-left: -10px
+                position: relative !important
+                top: 0 !important
+        input[type="text"], input[type="email"]
+            +roundedCorners(2px)
+            border-color: #e2e2e2 !important
+        #mc-embedded-subscribe
+            @extend .button
+            margin-top: 20px

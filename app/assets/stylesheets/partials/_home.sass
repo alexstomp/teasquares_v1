@@ -9,11 +9,12 @@
     width: 100%
     z-index: 200
     .center
+        @extend .clearfix
         .section-header
             color: $black
             display: block
             font-size: 2.5rem
-            margin-bottom: 20px
+            margin-bottom: 10px
             text-align: center
             width: 100%
             span
@@ -31,7 +32,26 @@
                     height: 4px
                     width: 100px
         .section-text
+            float: right
             line-height: 3.5rem
+            padding-left: 50px
+            width: 70%
+            vertical-align: top
+        .section-pre-text, .section-closing-text
+            color: #444444
+            display: block
+            font-size: 1.4rem
+            line-height: 2rem
+            margin-top: 10px
+            margin-bottom: 30px
+            text-align: center
+            strong
+                color: inherit
+                font-size: inherit
+                font-weight: bold
+                line-height: inherit
+        .section-closing-text
+            margin-top: 75px
     &.home-top
         background: asset-url('greyzz.png') fixed
         padding-top: 188px
@@ -45,6 +65,7 @@
             position: relative
             height: 100%
             .home-top-header
+                +text-shadow()
                 +transition(tanslateY('-50%'))
                 color: $accent
                 font-size: 4.5rem
@@ -58,7 +79,45 @@
                     font-size: inherit
                     font-family: inherit
                     line-height: inherit
-
+    &.home-intro
+        .section-header
+            float: left
+            text-align: left
+            width: 30%
+            span.section-header-text
+                text-align: left
+    &.home-flavors
+        .flavors-wrap
+            @extend .clearfix
+            display: block
+            width: 100%
+            .flavor
+                float: left
+                display: inline-block
+                padding-bottom: 20px
+                vertical-align: top
+                width: 32%
+                &.middle
+                    margin-left: 2%
+                &.last
+                    float: right
+                img, .flavor-header, .flavor-description
+                    display: block
+                    text-align: center
+                    width: 100%
+                .flavor-header
+                    font-size: 2.5rem
+                    line-height: 1.5
+                    margin-top: 50px
+                .flavor-description
+                    color: #444444
+                    font-size: 1.4rem
+                    line-height: 1.5
+        .section-closing-text
+            float: left
+            width: 100%
+    &.home-buy-now
+        text-align: center
 .section-divider
     background: asset-url('greyzz.png') fixed
     border-bottom: 1px solid #f6f6f6
@@ -73,3 +132,27 @@
 //SMALL
 
 @media screen and (max-width: $small)
+    .section.home-flavors
+        .flavors-wrap
+            .flavor
+                clear: left
+                overflow: hidden
+                height: 53.652vw
+                margin-bottom: 40px
+                width: 100%
+                img
+                    position: absolute
+                    right: -45%
+                    width: 100%
+                .flavor-header, .flavor-description
+                    clear: left
+                    float: left
+                    text-align: left
+                    width: 50%
+                &.middle
+                    .flavor-header, .flavor-description
+                        clear: right
+                        float: right
+                    img
+                        left: -45%
+                        right: auto
