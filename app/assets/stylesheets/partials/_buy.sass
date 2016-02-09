@@ -1,6 +1,9 @@
 // BUY PAGE
 
 .section.buy-form
+    background: asset-url('greyzz.png') fixed
+    border-bottom: 0
+    min-height: 100vh
     padding: 150px 0 50px
     .section-header
         float: right
@@ -13,7 +16,7 @@
         clear: right
         float: right
         padding-left: 0
-        padding-top: 20px
+        padding-top: 38px
         width: 48%
         vertical-align: top
     .mailing-signup-form
@@ -21,11 +24,13 @@
         clear: none
         width: 48%
         vertical-align: top
-        #mc_embed_signup form
-            padding-left: 0
-            padding-right: 0
-            .mc-field-group
-                width: 100%
+        #mc_embed_signup
+            background: transparent
+            form
+                padding-left: 0
+                padding-right: 0
+                .mc-field-group
+                    width: 100%
         label
             font-weight: 700
             text-transform: uppercase
